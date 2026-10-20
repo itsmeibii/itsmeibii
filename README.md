@@ -33,6 +33,11 @@ A Raspberry Pi 4 controller board for a split-flap display with HUB75 LED matrix
 - **Separate fused outputs:** 7.5 A for the LED panels and 3 A for the split-flap modules, plus SMAJ TVS diodes on VBUS and 5 V
 - 2-layer board with JLCPCB gerbers, a DigiKey BOM and a 3D-printed enclosure modeled in CadQuery
 
+<p align="center">
+  <img src="assets/splitflap/SplitFlap-enclosure-3d.png" width="80%" alt="SplitFlap 6-module enclosure render">
+  <br><sub>6-module enclosure: hoods, LED panel base and end caps (CadQuery → Fusion 360)</sub>
+</p>
+
 <details>
 <summary><b>Schematics, PCB layout and enclosure</b></summary>
 <br>
@@ -47,8 +52,8 @@ A Raspberry Pi 4 controller board for a split-flap display with HUB75 LED matrix
 **Top-level schematic** (Pi header, HUB75, split-flap bus)
 <img src="assets/splitflap/SplitFlap-schematic-p1.png" alt="Top-level schematic">
 
-**Enclosure** (CadQuery → STEP for Fusion 360)
-<img src="assets/splitflap/SplitFlap-enclosure.png" alt="Enclosure render">
+**Enclosure preview** (front and cutaway)
+<img src="assets/splitflap/SplitFlap-enclosure.png" alt="Enclosure preview">
 
 📄 [Full schematic (PDF)](assets/splitflap/SplitFlap-schematic.pdf)
 </details>
@@ -61,7 +66,7 @@ A Raspberry Pi 4 controller board for a split-flap display with HUB75 LED matrix
 The power and sensor board for a VTOL delivery drone's companion computer. It powers a Raspberry Pi 4, reads environmental sensors over I2C, and links the Pi to the flight controller.
 
 <p align="center">
-  <img src="assets/vtol/VTOL-schematic.png" width="85%" alt="VTOL board schematic">
+  <img src="assets/vtol/VTOL-pcb-3d.png" width="80%" alt="VTOL board 3D render">
 </p>
 
 - **Power:** USB-C 5 V input, 2 A PTC fuse, AP7361C 3.3 V LDO
@@ -72,8 +77,16 @@ The power and sensor board for a VTOL delivery drone's companion computer. It po
 - Started out as an ESP32-S3 board (v1 layout below) and was later redesigned to run everything off the Pi
 
 <details>
-<summary><b>v1 PCB layout (ESP32-S3 version)</b></summary>
+<summary><b>Schematic and PCB layout</b></summary>
 <br>
+
+**Schematic**
+<img src="assets/vtol/VTOL-schematic.png" alt="VTOL board schematic">
+
+**PCB top**
+<img src="assets/vtol/VTOL-pcb-top.png" alt="VTOL PCB top">
+
+**v1 layout** (ESP32-S3 version)
 <img src="assets/vtol/VTOL-v1-pcb-top.png" alt="VTOL v1 PCB">
 
 📄 [Full schematic (PDF)](assets/vtol/VTOL-schematic.pdf)
